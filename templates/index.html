@@ -1,0 +1,336 @@
+<!-- new -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+html,
+body {
+  /* background-color: #00bfff; */
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+}
+
+header {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px;
+}
+
+#form-outer {
+  background-color: rgb(250, 250, 250);
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 92.2%;
+  /* max-width: 900px; */
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #1a8cff;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+#reset {
+  background-color: #1a8cff;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+<!-- #####1 -->
+<head>
+  <meta charset="utf-8">
+  <title>Peace Lily</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+      
+  <!-- footer -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/58728929a1.js" crossorigin="anonymous"></script> 
+
+  <style>
+    body{
+background-color: rgb(205, 255, 228);
+margin: 50px 100px;
+background-image: url("https://www.plantsnap.com/wp-content/uploads/2019/09/peace-lily.jpg");
+background-position: center; /* Center the image */
+background-repeat: no-repeat; /* Do not repeat the image */
+background-size: cover;
+
+}
+.navbar{
+padding:50px 50px 10px 50px;
+margin: 20px 100px;
+}
+
+.contain{
+background-color: white;
+margin: 100px 50px 0 50px;
+
+}
+h3{
+background-color: rgb(215, 235, 215);
+padding: 50px 50px;
+margin: 50px 100px;
+}
+
+.row{
+padding: 40px 50px 20px 50px;
+margin: 50px 100px;
+}
+.card .btn{
+background-color: rgb(225, 255, 225);
+}
+  </style>
+</head>
+<!-- ****1 -->
+
+<!-- ######2 -->
+  <div class="contain">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/home">Peace Lily</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" href="/home">Blog</a>
+            <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+            <a class="nav-link active" href="/contact">Contact Us</a>
+               
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div style="background-image: url('static/bg.jpg'); background-repeat: no-repeat;background-size: cover; height: 150px; margin:20px 100px 0 100px">
+      <img src="static/logo.png" style="float: left; margin-top: 20px">
+      <p style="color: rgb(67, 161, 103); float: right; font-size: 40px;font-family: 'Dancing Script', cursive; margin-top: 50px">Peace always begins with a smile :)</p>
+    </div>
+  </div>
+
+  <!-- ******2 -->
+
+
+
+
+
+<div id="form-outer">
+  <h1 id="title" style="text-align: center;">Get in Touch !!</h1>
+  <p id="description" style="text-align: center;">
+    To stay connected with us....
+  </p>
+  <form id="survey-form" method="POST" action="/data">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">Full Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="mobile">Enter your phone number: </label>
+      </div>
+      <div class="rightTab">
+        <input type="tel" name="mobile" id="number"  class="input-field" placeholder="Mobile Number" required>
+      </div>
+    </div>
+
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age" required>
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="dob-label" for="dob">D.O.B: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob" id="iddob" class="input-field" required>
+      </div>
+    </div>
+    
+    <!-- <div class="rowTab">
+      <div class="labels">
+        <label for="department">Department: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="department" class="dropdown">
+        <option disabled value>Select an option</option>
+        <option value="Information Technology">IT</option>
+        <option value="Computer Science Engineering">CSE</option>
+        <option value="Electronics and Communication Engineering">ECE</option>
+        <option value="Mechanical Engineering">MECH</option>
+        <option value="Civil Engineering">CIVIL</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+    </div> -->
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <label class="radio-inline"><input name="gender" value="Male"  type="radio">Male</label>
+          <label class="radio-inline"><input name="gender" value="Female"  type="radio">Female</label>
+          <label class="radio-inline"><input name="gender" value="others"  type="radio">Others</label>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="address">Address: </label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="address" placeholder="Enter your address here..."></textarea>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="pincode">Pincode: </label>
+      </div>
+      <div class="rightTab">
+       <input type="number" name="pincode" id="idpincode" class="input-field" style="height:20px;resize:vertical;" placeholder="6 - - - - -"></div>
+    </div>
+    
+       <div class="rowTab">
+      <div class="labels">
+        <label for="language">Language Known: </label>
+      </div>
+      <div class="rightTab">
+        <ul id="language" style="list-style: none; margin-top: 25px;">
+          <li class="checkbox"><label><input name="language1" value="English" type="checkbox" class="userRatings">English</label></li>
+          <li class="checkbox"><label><input name="language2" value="Marathi" type="checkbox" class="userRatings">Tamil</label></li>
+          <li class="checkbox"><label><input name="language3" value="Hindi" type="checkbox" class="userRatings">Hindi</label></li>
+          <li class="checkbox"><label><input name="language5" value="Kannada" type="checkbox" class="userRatings">Kannada</label></li>
+          <li class="checkbox"><label><input name="language7" value="others" type="checkbox" class="userRatings">Others</label></li>
+        </ul>
+      </div>
+    </div>
+    
+    <button id="submit" type="submit" style="margin-left: 380px;">Submit</button>
+    <button id="reset" type="reset">Reset</button>
+    <a href="/home">
+      <button id="reset" type="button">Return</button>
+        </a>
+    
+  </form>
+</div>
